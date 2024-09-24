@@ -1,0 +1,78 @@
+body{
+   height:100vh;
+   background-color:#F7ECDE;
+   font-family:System-ui;
+   font-style:italic;
+}
+.head h1{
+    width:fit-content;
+    margin:auto;
+    position: relative;
+    font-size:45px;
+    font-weight: 900;
+    letter-spacing:3px;
+}
+.head h1::after{
+    content:'';
+    height:9px;
+    width:100%;
+    background-color:#fec260 ;
+    position: absolute;
+    bottom:4px;
+    left:0;
+    z-index:-1;
+    transition:0.7s;
+}
+.head h1:hover::after{
+height:30px;
+}
+.container h2{
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    color: transparent;
+    background-clip: text;
+}
+.form-control:focus{
+    border-color: #d99c39;
+    box-shadow: none;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+.btn-submit{
+    background-color: #d1512d;
+    padding:10px 50px;
+    color:#fff;
+    letter-spacing:2px;
+    width:200px;
+    display: block;
+    margin: auto;
+    transition:0.7s;
+}
+.btn-update{
+    background-color: gold;
+    padding:10px 50px;
+    color:#fff;
+    letter-spacing:2px;
+    width:200px;
+    display: block;
+    margin: auto;
+    transition:0.7s;
+}
+.btn-submit:hover{
+    color:#fff;
+    background-color: #842b12ff;
+}
+.btn-update:hover{
+    color:#fff;
+    background-color: #6c5c06;
+}
+.layer{
+    position:fixed;
+    inset:0;
+    background-color:#f0c504b3;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.layer .layerson{
+    background-color:#f0c504;
+    border-radius: 80px;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Book Marker</title>
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="Css/all.min.css">
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <!-- Css Link -->
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+
+<body>
+
+    <!-- Start Project -->
+    <div class="container py-5">
+        <div class="head py-5 text-center">
+            <h1>Book Marker</h1>
+        </div>
+        <div class="dotted">
+            <p class="px-2 py-3 text-center">................................................
+                ..............................................................................
+                .............................................................................
+                ..................................................................</p>
+        </div>
+        <div class="header2">
+            <h2 class="text-center"><i class="fa-solid fa-bookmark"></i>
+                Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i>
+            </h2>
+        </div>
+        <form class="mt-5">
+            <label class="fs-5 mb-2" for="siteName"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+            <input oninput="ValidationForm(this)" type="text" name="siteName" id="siteName" class="form-control mb-3"
+                placeholder="Book Marker Name">
+            <div class="alert alert-danger d-none">
+                The first letter of the word must be capitalized, followed by at least four letters Small and a maximum of
+                fifteen letters.
+            </div>
+            <label class="fs-5 my-2" for="siteUrl"><i class="fa-solid fa-link"></i> Site Name</label>
+            <input oninput="ValidationForm(this)" type="text" name="siteUrl" id="siteUrl" class="form-control"
+                placeholder="WebSite URL">
+            <div class="alert alert-danger mt-3 d-none">
+                Values ​​must start with three letters, starting with the letter w, for example www, followed by the
+                letter dot, for example www. Then the name of the site, followed by another letter dot, then the word
+                com, for example: www.example.com
+            </div>
+    </div>
+    <div class="btn-sub  w-100 mt-4">
+        <button type="submit" id="create" class="btn btn-submit">Submit</button>
+        <button type="submit" id="update" class="btn btn-update d-none">Update</button>
+        <hr class="text-danger">
+    </div>
+    </form>
+    <input oninput="Search(this.value)" type="search" name="search" id="search" class="form-control my-5"
+        placeholder="Search About WebSite Name">
+    <table class="table text-center">
+        <thead>
+            <tr>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Update</th>
+                <th>Visit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+
+        </tbody>
+    </table>
+    </div>
+<div class="layer d-none">
+    <div class="aler alert-danger text-center display-4 layerson p-5 ">
+        All Inputs Field Is Required...
+    </div>
+</div>
+    <!-- End Project -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JS Link -->
+    <script src="Js/main.js"></script>
+</body>
+
+</html>
